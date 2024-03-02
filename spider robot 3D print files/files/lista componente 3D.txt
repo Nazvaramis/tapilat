@@ -1,0 +1,9 @@
+8 bucati	- s_hold
+
+1 body upper
+1 body down
+2 coxa left
+2 coxa right
+1 femur
+2 tibii left
+2 tibii right
