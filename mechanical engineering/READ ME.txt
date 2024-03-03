@@ -1,0 +1,2 @@
+aici am facut un single staged industrial gearbox ca un proiect la facultate, are documentatie + animatie in fusion 360(very noice). 
+Pe scurt in documentatie is o gramada de calcule si in animatie e output ce iese din calculele acelea.
