@@ -1,0 +1,80 @@
+﻿
+@model SoBuddy.Models.Registerr
+
+
+@{
+    ViewBag.Title = "Register";
+}
+
+
+
+<!-- basically aici verifica widthu deviceului cu care the conectezi si modifica pagina --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ENROLLMENT</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="../../Content/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/passwordscheck.js"></script>
+    <link href="~/Scripts/passwordscheck.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+
+    <div class="center-screen">
+        <div style="width: 300px;">
+            <div class="align-center">
+                <br /><br /><br />
+                <h2>Register</h2>
+            </div>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                @Html.ValidationSummary(true)
+                <br />
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Username)
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(model => model.Username)
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email)
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(model => model.Email)
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password)
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(model => model.Password)
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Confirmpwd)
+                    @Html.PasswordFor(model => model.Confirmpwd, new { @class = "form-control", required = "required" })
+                    @Html.ValidationMessageFor(model => model.Confirmpwd)
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn btn-primary form-button" />
+                    <button class="back-button" onclick="goBack()" type="button">Back</button>
+                </div>
+            }
+        </div>
+    </div>
+
+    @section Scripts {
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    }

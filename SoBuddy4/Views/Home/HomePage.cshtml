@@ -1,0 +1,40 @@
+﻿<img src="~/Content/images/frame_welcome.svg" alt="Description of image" style="width: 1200px; height: 800px;max-width: 100%; height: auto">
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+    
+<div class="features-section">
+    <br/><br/>
+    <h2>HERE'S WHAT SOBUDDY BRINGS TO YOUR FITNESS JOURNEY:</h2>
+    <ul>
+
+        <br></br><p>Team up with fellow enthusiasts to elevate your fitness journey. Connect with like-minded individuals to swap training strategies
+            <p>Delve into a world of tailored experiences designed just for you. Uncover events, clubs, and activities perfectly aligned with your passions and interests.
+            <p>SoBuddy provides the perfect platform to unite enthusiasts, fuel your interests, and cultivate lasting friendships. Join the community and let the fun begin!</p><br></br>
+    </ul>
+</div>
+
+<div class="features-section" style="display: flex; align-items: center; text-align: center">
+    <img src="~/Content/images/whysobuddy.gif" alt="Description of GIF" style="width: 150px; height: 200px;max-width: 100%; height: auto">
+    @{
+        var messages = new string[]
+        {
+            "Because SoBuddy is more than an app",
+            "Because SoBuddy is a vibrant community for athletes",
+            "Because SoBuddy has a user-friendly interface",
+            "Because you can connect with friends and meet new people everyday",
+            "Because with SoBuddy you can make every moment count 📱✨"
+        };
+    }
+
+    @foreach (var message in messages)
+    {
+        <div class="random-message">@message</div>
+    }
+
+    </div>
+
+<div class="get-started-section">
+    <br><br>
+    
+    <h2 class="align-center">@Html.ActionLink("Join the Fun!", "Login", "Login")</h2>
+    <br/><br/><br/>
+</div>

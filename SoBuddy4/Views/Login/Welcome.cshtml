@@ -1,0 +1,46 @@
+﻿
+@model SoBuddy.Models.Registerr
+
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome</title>
+</head>
+<body>
+    <div>
+        @if (Model != null && Model.RegisterInfo != null && Model.RegisterInfo.Count > 0)
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.RegisterInfo)
+                    {
+                        <tr>
+                            <td>@(item.ID ?? "N/A")</td>
+                            <td>@(item.Username ?? "N/A")</td>
+                            <td>@(item.Email ?? "N/A")</td>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No user data available.</p>
+        }
+    </div>
+</body>
+</html>

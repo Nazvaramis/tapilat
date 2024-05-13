@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    @@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title SoBuddy </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/Content/bootstrap-vapor.css"/>
+    <link rel="stylesheet" href="~/Content/Site.css"/>
+    <link rel="stylesheet" href="~/favicon.ico"/>
+</head>
+<body style="font-size: 18px;">
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("HomePage", "Home")">
+                <img src="~/Content/images/sobuddyfinal.gif" width="100" height="100" alt="SoBuddy Logo"/> <!-- Replace 'yourLogo.gif' with the name of your GIF file -->
+            </a>
+
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="@Url.Action("HomePage", "Home")">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="@Url.Action("About", "Home")">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="@Url.Action("Contact", "Home")">Contact</a>
+                    </li>
+                </ul>
+                <div class="align-right d-flex">
+                    <div>
+
+                        <!-- aici le dai link , "Log in(textu afisat)", "Login" functia , "Login" viewul care da redirect-->
+                        @Html.ActionLink("Log in", "Login", "Login", null, new { @class = "nav-link text-dark" })
+                    </div>
+                    <div>
+                        @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link text-dark" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container body-content">
+    @RenderBody()
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+@RenderSection("scripts", required: false)
+<br/><br/><br/>
+<footer class="footer" style="text-align: center;">
+    <div class="container">
+        <span class="text-muted">© 2024 SoBuddy. All rights reserved.</span>
+    </div>
+</footer>
+
+</body>
+</html>

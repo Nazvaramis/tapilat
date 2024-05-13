@@ -1,0 +1,125 @@
+﻿
+@model SoBuddy.Models.Registerr
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<!-- basically aici verifica widthu deviceului cu care the conectezi si modifica pagina -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ENROLLMENT</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="../../Content/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/passwordscheck.js"></script>
+    <link href="~/Scripts/passwordscheck.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+    <!---->
+    <!-- controlleru se numeste LoginController !-->
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+    $.ajax({
+
+    type : 'POST',
+    URL: '/LoginController/LoginController',
+    data: data
+    succes : function(data){
+    datadata = data.status
+    if(status == "1"){
+
+    window.location.href = '@Url.Action("Login","LoginController")'
+
+    }
+
+    }
+    });
+
+
+    });
+
+
+    </script>
+    </head>
+    </body>
+
+
+
+@using (Html.BeginForm("Login", "LoginController", FormMethod.Post))
+            {
+    <!-- anti forgery token creeaza un token unic pentru fiecare utilizator , ma gandesc ca un cookie -->
+    @Html.AntiForgeryToken()
+
+
+
+
+
+            }
+
+
+    <div class="center-screen">
+        <div style="width: 300px;">
+            <div class="align-center">
+                <h2>Login</h2>
+            </div>
+
+
+
+
+
+
+
+            <form method="post" action="/Login/Login">
+                <div class="form-group">
+                    <br />
+
+                    <!-- placeholder e un text care iti afiseaza cand campu e gol , in cazu nostru e "Your Username"  -->
+
+                    @Html.LabelFor(e => e.Username, "Username")
+                    @Html.TextBoxFor(e => e.Username,new {@class = "form-control",placeholder = "your username"})
+                    @Html.ValidationMessageFor(e => e.Username)
+                    
+
+
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required class="form-control" />
+                </div>
+
+                <div class="form-group button-group">
+                    <input type="submit" value="Login" class="btn btn-primary form-button" />
+                    @Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-secondary form-button", @style = "text-transform: none;" })                <button class="back-button" onclick="location.href='@Url.Action("HomePage", "Home")'" type="button">Back</button>
+
+
+                    <div class="align-right">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+
+            window.history.back();
+
+        }
+    </script>
