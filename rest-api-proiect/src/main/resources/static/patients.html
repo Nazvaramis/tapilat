@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Patients </title>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+
+    }
+
+
+    button{
+        background-color: white;
+        right: 750px;
+        top: 700px;
+        position: absolute;
+
+
+
+
+    }
+    #delete{
+
+        background-color: white;
+        left: 900px;
+        top: 700px;
+        position: absolute;
+        border: 1px solid black;
+        length: 200px;
+        width: 120px;
+    }
+
+    #form{
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        padding: 100px;
+        z-index: 1000;
+
+
+
+
+    }
+
+    #cancelDelete{
+        display: none;
+        position: fixed;
+        top: 20%;
+        left: 70%;
+
+
+
+    }
+    #deletepatient{
+        dispaly: none;
+        position: fixed;
+        top: 20%;
+        right : 70%;
+        length: 100px;
+        width: 120px;
+
+    }
+
+
+</style>
+</head>
+
+<body>
+<h1> Patients table</h1>
+<div id = "container">
+<table>
+    <thead>
+        <tr>
+            <th> Id </th>
+            <th> Name </th>
+            <th> Age  </th>
+            <th> Department </th>
+            <th> Status </th>
+
+        </tr>
+    </thead>
+    <tbody id = "patientbody">
+
+    </tbody>
+</table>
+
+    <button id = 'homepage'>Homepage
+    </button>
+    <button id = 'delete'> Delete a patient</button>
+</div>
+
+<div id = "form" style = "display: none;">
+    <label for="deleteId">Enter patient ID:  </label>
+    <input type ="number" id = "deleteId">
+
+
+    <button id = "cancelDelete">Cancel delete</button>
+    <button id = 'deletepatient'>Delete Patient </button>
+
+</div>
+</body>
+
+<script>
+ async function getUsers(){
+     try{
+        const response = await fetch("/api/patients",
+         {
+             method: "GET",
+         },
+     )
+         if(!response.ok){
+             throw new Error(`Error! status  ${response.status}`);
+         }
+
+        const data = await response.json();
+         return data;
+
+     }catch(error){
+        console.log(error);
+
+     }
+ }
+
+getUsers().then(data => {
+    console.log(data);
+
+
+    const tbody = document.getElementById("patientbody")
+
+    data.forEach(user =>{
+        const row = document.createElement("tr");
+
+
+        const id = document.createElement("td");
+        id.innerHTML = `${user.id}`
+
+        const name = document.createElement("td")
+        name.innerHTML = `${user.name}`
+
+        const age = document.createElement("td")
+        age.innerHTML = `${user.age}`
+
+        const department = document.createElement("td")
+        department.innerHTML = `${user.department}`
+
+        const status = document.createElement("td")
+        status.innerHTML = `${user.status}`
+
+
+        row.append(...[id,name,age,department,status])
+        tbody.appendChild(row);
+
+
+    })
+
+
+})
+
+
+ document.getElementById("homepage").addEventListener("click",function(){
+     window.location.href = "http://localhost:8080/";
+
+ });
+
+ async function deleteuser(id){
+
+     try{
+         const response = await fetch(`/api/patients/${id}`, {
+             method: "DELETE",
+         });
+
+
+         if(!response.ok){
+             throw new Error("Something went wrong");
+         }
+
+
+     }catch(error){
+         console.log(error)
+         alert("Failed to delete patient");
+     }
+
+ }
+
+ // asta il aduce popul sa fie vizibil , initial e invizibil
+document.getElementById("delete").addEventListener("click",function () {
+    document.getElementById("form").style.display = "block";
+    document.getElementById("cancelDelete").style.display = "block";
+    document.getElementById("deletepatient").style.display = "block";
+
+});
+
+ // il face din nou invizibil
+ document.getElementById("cancelDelete").addEventListener("click",function(){
+    document.getElementById("form").style.display = "none";
+     document.getElementById("cancelDelete").style.display = "none";
+     document.getElementById("deletepatient").style.display = "none";
+
+ });
+
+ //
+ document.getElementById("deletepatient").addEventListener("click",function(){
+     const id = document.getElementById("deleteId").value;
+
+     if( id == ""){
+         alert("Please enter an ID");
+         return;
+
+     }
+
+     deleteuser(id);
+     alert("Patient with id: " + id + " deleted successfully ")
+
+
+ })
+
+
+</script>
+
+
+
+</html>

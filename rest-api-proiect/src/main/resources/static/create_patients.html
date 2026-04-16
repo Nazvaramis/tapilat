@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create patients</title>
+    <style>
+
+
+        button2{
+
+            position:absolute;
+            background-color: black;
+            bottom:5px;
+            left: 10px;
+            color: white;
+
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius:8px;
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+<h1> Register patient </h1>
+
+<form id = "patientForm">
+
+    <label for = "name">Name:</label>
+    <input type = "text" id = "name">
+
+    <label for = "age">Age</label>
+    <input type = "number" id = "age">
+
+    <label for = "department">Department: </label>
+    <input type = "text" id ="department">
+
+    <label for = "status">Status:</label>
+    <input type = "text" id ="status">
+
+    <button type = "submit">Create Patient</button>
+
+    <button2 id = "return">Return to main menu</button2>
+
+
+</form>
+
+<div>
+
+    <script>
+
+        const form = document.getElementById("patientForm");
+        form.addEventListener("submit",async function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const age = parseInt(document.getElementById("age").value);
+            const department = document.getElementById("department").value;
+            const status = document.getElementById("status").value;
+
+            if(name == ""){
+                alert("Name is required! ");
+                return;
+
+            }
+            if(age < 0){
+                alert("age is required!");
+                return;
+            }
+            if(department == ""){
+                alert("department is required!");
+                return;
+            }
+            if(status == ""){
+                alert("department is required!");
+                return;
+            }
+
+
+
+
+
+            await createUser(name,age,department,status);
+
+        });
+        async function createUser(name,age,department,status){
+            try{
+                const response = await fetch("/api/patients",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            name: name,
+                            age: age ,
+                            department: department,
+                            status: status ,
+
+
+
+                        })
+                    },
+                )
+                if(!response.ok){
+                    throw new Error(`Error! status  ${response.status}`);
+                }
+
+                alert("Patient created succesfully");
+                form.reset();
+
+            }catch(error){
+                console.log(error);
+                alert("Failed to create a patient");
+
+            }
+
+        }
+
+
+    document.getElementById("return").addEventListener("click",function(){
+
+        window.location.href ="index.html";
+    })
+
+
+
+    </script>
+
+
+
+</div>
+</body>
+</html>

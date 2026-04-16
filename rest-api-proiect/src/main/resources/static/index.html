@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Home Page </title>
+</head>
+
+
+<style>
+    body {
+        margin: 0;
+
+    }
+
+    img{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    button {
+        background-color: white;
+        position: absolute;
+        bottom: 60px;
+        left: 200px;
+        transform: translateX(-50%);
+
+
+
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius:8px;
+    }
+
+    button1{
+        background-color: white;
+        position: absolute;
+        bottom:60px;
+        right:200px;
+
+
+        transform: translateX(-50%);
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius:8px;
+    }
+
+</style>
+
+
+<div>
+
+<img src="backround2.png" alt="home page">
+<button id="ViewAllPatients">View all patients</button>
+
+<button1 id = "CreatePatient">Create patient</button1>
+</div>
+
+<script>
+document.getElementById("ViewAllPatients").addEventListener("click",function(){
+    window.location.href = "patients.html";
+
+});
+
+document.getElementById("CreatePatient").addEventListener("click",function()
+{
+    window.location.href = "create_patients.html";
+
+});
+
+
+
+</script>
+
+
+
+
+</html>
