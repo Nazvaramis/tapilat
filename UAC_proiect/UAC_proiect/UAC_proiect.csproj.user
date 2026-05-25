@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="AplicantPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplyJobWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreateJobOffer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ModifyJobOfferWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RecruiterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Register.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewApplicantsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewApplicationsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

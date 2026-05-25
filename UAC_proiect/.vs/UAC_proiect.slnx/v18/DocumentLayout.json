@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\createjoboffer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\createjoboffer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\models\\joboffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\models\\joboffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Migrations\\20260505102816_Updae.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UAC_proiect\\Migrations\\20260505102816_Updae.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\createjoboffer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\createjoboffer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\recruiterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\recruiterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\modifyjobofferwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\modifyjobofferwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|c:\\users\\mrota\\source\\repos\\uac_proiect\\uac_proiect\\recruiterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663C3CA8-2578-B8C3-C900-4E8A077C3427}|UAC_proiect\\UAC_proiect.csproj|solutionrelative:uac_proiect\\recruiterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\MainWindow.xaml.cs",
+              "RelativeToolTip": "UAC_proiect\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T13:32:55.184Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20260505102816_Updae.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Migrations\\20260505102816_Updae.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\Migrations\\20260505102816_Updae.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Migrations\\20260505102816_Updae.cs",
+              "RelativeToolTip": "UAC_proiect\\Migrations\\20260505102816_Updae.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:28:16.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Models\\User.cs",
+              "RelativeToolTip": "UAC_proiect\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:21:14.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobOffer.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Models\\JobOffer.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\Models\\JobOffer.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Models\\JobOffer.cs",
+              "RelativeToolTip": "UAC_proiect\\Models\\JobOffer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:20:22.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateJobOffer.xaml",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\CreateJobOffer.xaml",
+              "RelativeDocumentMoniker": "UAC_proiect\\CreateJobOffer.xaml",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\CreateJobOffer.xaml",
+              "RelativeToolTip": "UAC_proiect\\CreateJobOffer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T10:17:27.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.xaml",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Register.xaml",
+              "RelativeDocumentMoniker": "UAC_proiect\\Register.xaml",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Register.xaml",
+              "RelativeToolTip": "UAC_proiect\\Register.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T10:17:23.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Models\\Application.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\Models\\Application.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\Models\\Application.cs",
+              "RelativeToolTip": "UAC_proiect\\Models\\Application.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:16:31.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModifyJobOfferWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\ModifyJobOfferWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\ModifyJobOfferWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\ModifyJobOfferWindow.xaml.cs",
+              "RelativeToolTip": "UAC_proiect\\ModifyJobOfferWindow.xaml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:15:50.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateJobOffer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\CreateJobOffer.xaml.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\CreateJobOffer.xaml.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\CreateJobOffer.xaml.cs",
+              "RelativeToolTip": "UAC_proiect\\CreateJobOffer.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowCMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:15:20.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RecruiterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\RecruiterPage.xaml.cs",
+              "RelativeDocumentMoniker": "UAC_proiect\\RecruiterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\RecruiterPage.xaml.cs",
+              "RelativeToolTip": "UAC_proiect\\RecruiterPage.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwFcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:14:31.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RecruiterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\RecruiterPage.xaml",
+              "RelativeDocumentMoniker": "UAC_proiect\\RecruiterPage.xaml",
+              "ToolTip": "C:\\Users\\mrota\\source\\repos\\UAC_proiect\\UAC_proiect\\RecruiterPage.xaml",
+              "RelativeToolTip": "UAC_proiect\\RecruiterPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T10:14:22.124Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

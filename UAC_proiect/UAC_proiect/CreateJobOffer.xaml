@@ -1,0 +1,38 @@
+﻿<Window x:Class="UAC_proiect.CreateJobOffer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UAC_proiect"
+        mc:Ignorable="d"
+        Title="JobOffer" Height="450" Width="800">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,0,10,10" VerticalAlignment="Center" Text="Title: "/>
+        <TextBox x:Name="TitleTextBox" Grid.Row="0" Grid.Column="1" Margin="0,0,0,10" Height="28"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,0,10,10" VerticalAlignment="Center" Text="Description: "/>
+        <TextBox x:Name="DescriptionTextBox" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" Height="80" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <TextBox x:Name="DepartamentTextBox" Grid.Row="3" Grid.Column="1" Margin="49,45,219,64" />
+        <Button Grid.Row="2" Grid.ColumnSpan="2" Content="SaveJob" Width="130" Height="32" HorizontalAlignment="Center" Click="SaveJobOffer_Click"/>
+
+
+
+
+
+
+
+    </Grid>
+</Window>

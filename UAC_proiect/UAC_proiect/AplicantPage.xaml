@@ -1,0 +1,30 @@
+﻿<Window x:Class="UAC_proiect.AplicantPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UAC_proiect"
+        mc:Ignorable="d"
+        Title="ApplicantPage" Height="450" Width="800">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="WelcomeTextBlock" Grid.Row="0" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" Text="Welcome"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="ApplyJobButton" Content="Apply" Width="120" Height="30" Margin="0,0,10,0" Click="ApplyJobButton_Click"/>
+
+            <Button x:Name="MyApplicationsButton" Content="My Applications" Width="140" Height="30" Margin="0,0,10,0" Click="MyApplicationsButton_Click"/>
+
+            <Button x:Name="LogOutButton" Content="Logout" Width="120" Height="30" Click="LogOutButton_Click"/>
+        </StackPanel>
+
+        <DataGrid x:Name="JobOffersGrid" Grid.Row="2" AutoGenerateColumns="True" SelectionMode="Single" SelectionUnit="FullRow"/>
+        
+    </Grid>
+</Window>

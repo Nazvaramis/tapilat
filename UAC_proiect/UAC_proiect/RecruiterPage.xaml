@@ -1,0 +1,34 @@
+﻿<Window x:Class="UAC_proiect.RecruiterPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UAC_proiect"
+        mc:Ignorable="d"
+        Title="RecruiterPage" Height="450" Width="800">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        
+        <TextBlock x:Name="WelcomeTextBlock" Grid.Row="0" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" Text=" Welcome "/>
+        <Button x:Name="CreateJobButton" Grid.Row="1" Content="Create Job Offer" Width="150" Height="30" HorizontalAlignment="Left" Margin="0,0,0,10" Click="CreateJobButton_Click"/>
+        <Button x:Name="ModifyJobOfferButton" Grid.Row="1" Content="Modify Job Offer" Width="150" Height="30" HorizontalAlignment="Left"   Margin ="200,0,0,10" Click="ModifyJobOfferButton_Click"/>
+
+        <Button x:Name="LogOut" Height="30" Width="150" Content ="Logout" Click="LogOut_Click"  Margin="385,0,235,10" Grid.Row="1"/>
+        <Button x:Name="ViewApplicantsButton" Grid.Row="1" Content="View Applicants" Width="150" Height="30" HorizontalAlignment="Left" Margin="570,0,0,10" Click="ViewApplicantsButton_Click"/>
+
+        <DataGrid x:Name="JobOffersGrid" Grid.Row="3" AutoGenerateColumns="True"/>
+
+
+
+
+
+    </Grid>
+    
+    
+    
+</Window>
